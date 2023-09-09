@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Playfair Display SC', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .mi-elemento {
+      font-family: 'Tektur', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo justify-content-center">
+        <a href="index.html">
+            <img src="img/logo.png" width="100" height="500">
+        </a>
+    </div>
+    <div class="header-right">
+        <div class="search-bar">
+            <input class="search-input" autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?">
+            <button type="submit" class="search-submit">
+                <svg class="icon-inline icon-2x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 32"><path d="M30.77,27.73l-8-8a12.57,12.57,0,1,0-3.64,3.43l8.15,8.16a2.51,2.51,0,0,0,3.54,0A2.52,2.52,0,0,0,30.77,27.73ZM5,12.5A7.5,7.5,0,1,1,12.5,20,7.5,7.5,0,0,1,5,12.5Z"></path></svg>
+            </button>
+        </div>
+        <div class="user-account">
+            <a href="pages/registrarse.html"><img src="img/usuario.png" alt="Ícono de cuenta"></a>
+        </div>
+        <div class="shopping-cart">
+            <a href="pages/carrito.html"><img src="img/carrito.png" alt="Ícono de carrito de compras"></a>
+        </div>
+    </div>
+</header>
+  <nav class="nav justify-content-center">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><div class="dropdown">
+        <button class="dropbtn">Catalogo</button>
+        <div class="dropdown-content">
+          <a href="#">New in</a>
+          <a href="pages/remeras.html">Remeras</a>
+          <a href="pages/pantalones.html">Pantalones</a>
+          <a href="pages/accesorios.html">Accesorios</a>
+          <a href="pages/">Abrigos</a>
+        </div>
+      </div></li>
+      <li><a href="pages/preguntasfrecuentess.html">Preguntas Frecuentes</a></li>
+    </ul>
+  </nav>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.png" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <main>
+    <h2>Productos Destacados</h2>
+    <div class="productos-destacados">
+      <div class="producto">
+          <img src="img/1.png" alt="Producto 1">
+          <h3>Producto 1</h3>
+          <p>Precio: $50</p>
+          <a href="#">Ver Detalles</a>
+      </div>
+      <div class="producto">
+          <img src="img/1.png" alt="Producto 2">
+          <h3>Producto 2</h3>
+          <p>Precio: $60</p>
+          <a href="#">Ver Detalles</a>
+      </div>
+      <div class="producto">
+          <img src="img/1.png" alt="Producto 3">
+          <h3>Producto 3</h3>
+          <p>Precio: $70</p>
+          <a href="#">Ver Detalles</a>
+      </div>
+      <div class="producto">
+          <img src="img/1.png" alt="Producto 4">
+          <h3>Producto 4</h3>
+          <p>Precio: $80</p>
+          <a href="#">Ver Detalles</a>
+      </div>
+  </div>
+  <a href="pages/todosLosProductos.html" class="ver-todos-productos">Ver todos los productos</a>
+        <h1>Bienvenido a nuestra tienda de ropa</h1>
+        <h2>Productos Destacados</h2>
+        <div class="categorias">
+          <div class="categoria">
+            <a href="pages/pantalones.html">
+              <img src="img/Pantalones.png" alt="Pantalones">
+            </a>
+          </div>
+          <div class="categoria">
+            <a href="pages/remeras.html">
+              <img src="img/Remeras.png" alt="Remeras" >
+            </a>
+          </div>
+          <div class="categoria">
+            <a href="pages/abrigos.html">
+              <img src="img/Abrigos.png" alt="Abrigos">
+            </a>
+          </div>
+          <div class="categoria">
+            <a href="pages/accesorios.html">
+              <img src="img/Accesorios.png" alt="Accesorios">
+            </a>
+          </div>
+        </div>
+  </main>
+
+  <footer >
+    <div class="footer-logo">
+        <img src="img/logo.png" alt="Logo de la tienda de ropa">
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/politicayDevolucion.html">Politica y Devolucion</a></li>
+            <li><a href="pages/registrarse.html">Registrarse</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+        <a href="#"><img src="img/facebook.png" alt="Icono de Facebook"></a>
+        <a href="#"><img src="img/instagram.png" alt="Icono de Instagram"></a>
+        <a href="#"><img src="img/gorjeo.png" alt="Icono de Twitter"></a>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

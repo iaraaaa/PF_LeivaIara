@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body {
+      font-family: 'Playfair Display SC', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .mi-elemento {
+      font-family: 'Tektur', cursive;
+    }
+  </style>
+</head>
+<body class="body justify-content-center">
+  <header>
+    <div class="logo justify-content-center">
+        <a href="../index.html">
+            <img src="../img/logo.png" width="100" height="500">
+        </a>
+    </div>
+    <div class="header-right">
+        <div class="search-bar">
+            <input class="search-input" autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?">
+            <button type="submit" class="search-submit">
+                <svg class="icon-inline icon-2x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 32"><path d="M30.77,27.73l-8-8a12.57,12.57,0,1,0-3.64,3.43l8.15,8.16a2.51,2.51,0,0,0,3.54,0A2.52,2.52,0,0,0,30.77,27.73ZM5,12.5A7.5,7.5,0,1,1,12.5,20,7.5,7.5,0,0,1,5,12.5Z"></path></svg>
+            </button>
+        </div>
+        <div class="user-account">
+            <a href="usuario.html"><img src="../img/usuario.png" alt="Ícono de cuenta"></a>
+        </div>
+        <div class="shopping-cart">
+            <a href="carrito.html"><img src="../img/carrito.png" alt="Ícono de carrito de compras"></a>
+        </div>
+    </div>
+</header>
+  <nav class="nav justify-content-center">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><div class="dropdown">
+        <button class="dropbtn">Catalogo</button>
+        <div class="dropdown-content">
+          <a href="newIn.html">New in</a>
+            <a href="remeras.html">Remeras</a>
+            <a href="pantalones.html">Pantalones</a>
+            <a href="accesorios.html">Accesorios</a>
+            <a href="abrigos">Abrigos</a>
+        </div>
+      </div></li>
+      <li><a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="cart">
+        <h2>Tu Carrito</h2>
+        <div class="cart-item">
+            <img src="../img/1.png" alt="Producto 1">
+            <div class="item-details">
+                <h3>Producto 1</h3>
+                <p>Precio: $20</p>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <p>Total: $20</p>
+            </div>
+        </div>
+        <!-- Agrega más elementos de carrito aquí -->
+        <div class="cart-summary">
+            <p>Código Postal: <input type="text" id="postal-code"></p>
+            <p>Subtotal: $<span id="subtotal">20</span></p>
+            <p>Envío: $<span id="shipping">5</span></p>
+            <p>Total: $<span id="total">25</span></p>
+            <button class="checkout">Siguiente Paso</button>
+        </div>
+    </section>
+</main>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+        <img src="../img/logo.png" alt="Logo de la tienda de ropa">
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+        <a href="#"><img src="../img/facebook.png" alt="Icono de Facebook"></a>
+        <a href="#"><img src="../img/instagram.png" alt="Icono de Instagram"></a>
+        <a href="#"><img src="../img/gorjeo.png" alt="Icono de Twitter"></a>
+    </div>
+</footer>
