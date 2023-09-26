@@ -1,150 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Todos los productos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/styles.css">
-  <style>
-    body {
-      font-family: 'Playfair Display SC', serif;
-      margin: 0;
-      padding: 0;
-    }
-    .mi-elemento {
-      font-family: 'Tektur', cursive;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
-
 <body>
-  <header>
-    <div class="logo justify-content-center">
-        <a href="../index.html">
-            <img src="../img/logo.png" width="100" height="500">
-        </a>
-    </div>
-    <div class="header-right">
-        <div class="search-bar">
-            <input class="search-input" autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?">
-            <button type="submit" class="search-submit">
-                <svg class="icon-inline icon-2x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 32"><path d="M30.77,27.73l-8-8a12.57,12.57,0,1,0-3.64,3.43l8.15,8.16a2.51,2.51,0,0,0,3.54,0A2.52,2.52,0,0,0,30.77,27.73ZM5,12.5A7.5,7.5,0,1,1,12.5,20,7.5,7.5,0,0,1,5,12.5Z"></path></svg>
-            </button>
+    <header>
+        <div class="logo justify-content-center">
+            <a href="../index.html">
+                <img src="../img/logo.png" width="100" height="500" alt="Logo de la tienda de ropa">
+            </a>
         </div>
-        <div class="user-account">
-            <a href="registrarse.html"><img src="../img/usuario.png" alt="Ícono de cuenta"></a>
-        </div>
-        <div class="shopping-cart">
-            <a href="carrito.html"><img src="../img/carrito.png" alt="Ícono de carrito de compras"></a>
-        </div>
-    </div>
-</header>
-  <nav class="nav justify-content-center">
-    <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><div class="dropdown">
-        <button class="dropbtn">Catalogo</button>
-        <div class="dropdown-content">
-            <a href="#">New in</a>
-            <a href="remeras.html">Remeras</a>
-            <a href="pantalones.html">Pantalones</a>
-            <a href="accesorios.html">Accesorios</a>
-            <a href="abrigos.html">Abrigos</a>
-        </div>
-      </div></li>
-      <li><a href="pages/preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-    </ul>
-  </nav>
-  <main>
-    <main>
-        <section class="ropa-row">
-            <div class="ropa-item">
-                <img src="../img/1.png" alt="Prenda 1">
-                <h3>NOMBRE</h3>
-                <p>Precio: $20</p>
-                <button>Añadir al Carrito</button>
+        <div class="header-right">
+            <div class="search-bar">
+                <input class="search-input" autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="¿Qué estás buscando?">
+                <button type="submit" class="search-submit">
+                    <svg class="icon-inline icon-2x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 32"><path d="M30.77,27.73l-8-8a12.57,12.57,0,1,0-3.64,3.43l8.15,8.16a2.51,2.51,0,0,0,3.54,0A2.52,2.52,0,0,0,30.77,27.73ZM5,12.5A7.5,7.5,0,1,1,12.5,20,7.5,7.5,0,0,1,5,12.5Z"></path></svg>
+                </button>
             </div>
-            <div class="ropa-item">
-                <img src="../img/1.png" alt="Prenda 2">
-                <h3>NOMBRE</h3>
-                <p>Precio: $30</p>
-                <button>Añadir al Carrito</button>
+            <div class="user-account">
+                <a href="registrarse.html"><img src="../img/usuario.png" alt="Ícono de cuenta"></a>
             </div>
-            <div class="ropa-item">
-                <img src="../img/1.png" alt="Prenda 3">
-                <h3>NOMBRE</h3>
-                <p>Precio: $25</p>
-                <button>Añadir al Carrito</button>
-            </div>
-            <div class="ropa-item">
-                <img src="../img/1.png" alt="Prenda 4">
-                <h3>Chaqueta</h3>
-                <p>Precio: $40</p>
-                <button>Añadir al Carrito</button>
+            <div class="shopping-cart">
+                <a href="carrito.html"><img src="../img/carrito.png" alt="Ícono de carrito de compras"></a>
             </div>
         </div>
-        <div class="ropa-item">
-            <img src="../img/1.png" alt="Prenda 4">
-            <h3>Chaqueta</h3>
-            <p>Precio: $40</p>
-            <button>Añadir al Carrito</button>
-        </div>
-    </div>
-    <div class="ropa-item">
-        <img src="../img/1.png" alt="Prenda 4">
-        <h3>Chaqueta</h3>
-        <p>Precio: $40</p>
-        <button>Añadir al Carrito</button>
-    </div>
-    </div>
-            <div class="ropa-item">
-                <img src="../img/1.png" alt="Prenda 4">
-                <h3>Chaqueta</h3>
-                <p>Precio: $40</p>
-                <button>Añadir al Carrito</button>
-            </div>
+    </header>
 
-        </div>
-        <div class="ropa-item">
-            <img src="../img/1.png" alt="Prenda 4">
-            <h3>Chaqueta</h3>
-            <p>Precio: $40</p>
-            <button><a href="carrito.html" class="add-to-cart-button">Añadir al Carrito</a></button>
-        </div>
-    </div>
-    <div class="ropa-item">
-        <img src="../img/1.png" alt="Prenda 4">
-        <h3>Chaqueta</h3>
-        <p>Precio: $40</p>
-        <button>Añadir al Carrito</button>
-    </div>
-        </section>
-        <!-- Agregar más filas de prendas aquí -->
-    </main>
-  </main>
-
-  <footer>
-    <div class="footer-logo">
-        <img src="../img/logo.png" alt="Logo de la tienda de ropa">
-    </div>
-    <div class="footer-links">
+    <nav class="nav justify-content-center">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Novedades</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="politicayDevolucion.html">Politica y Devolucion</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Catalogo</button>
+                    <div class="dropdown-content">
+                        <a href="remeras.html" >Remeras</a>
+                        <a href="pantalones.html">Pantalones</a>
+                        <a href="calzado.html">Calzado</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="preguntasfrecuentess.html">Preguntas Frecuentes</a></li>
         </ul>
-    </div>
-    <div class="footer-social">
-        <a href="#"><img src="../img/facebook.png" alt="Icono de Facebook"></a>
-        <a href="#"><img src="../img/instagram.png" alt="Icono de Instagram"></a>
-        <a href="#"><img src="../img/gorjeo.png" alt="Icono de Twitter"></a>
-    </div>
-</footer>
+    </nav>
 
-
+    <main>
+        <div id="filtro">
+            <h2>Comprar por</h2>
+            <ul>
+                <li>Categorías</li>
+                <li>Color</li>
+                <li>Talla</li>
+                <!-- Agrega más elementos según sea necesario -->
+            </ul>
+        </div>
+        <div id="ropa">
+            <div class="item-ropa">
+                <img src="../img/zapatilla1.jpeg" alt="Zapatilla 1">
+                <h3>Ropa 1</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/zapatilla2.jpeg" alt="Zapatilla 2">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/zapatilla3.jpeg" alt="Zapatilla 3">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/zapatilla4.jpeg" alt="Zapatilla 4">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/zapatilla5.jpeg" alt="Zapatilla 5">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/zapatilla6.jpeg" alt="Zapatilla 6">
+                <a href="carrito.html"></a>
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remera.jpeg" alt="Zapatilla 1">
+                <h3>Ropa 1</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remeras.jpeg" alt="Zapatilla 2">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remera2.jpg" alt="Zapatilla 3">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remera3.jpeg" alt="Zapatilla 4">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remera4.jpeg" alt="Zapatilla 5">
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="item-ropa">
+                <img src="../img/remera5.jpeg" alt="Zapatilla 6">
+                <a href="carrito.html"></a>
+                <h3>Ropa 2</h3>
+                <a href="#">Ver Detalles</a>
+                <p>Precio: $XX.XX</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+              <img src="../img/logo.png" width="100" height="500">
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>Productos</h3>
+          <ul>
+            <li><a href="remeras.html">Remeras</a></li>
+            <li><a href="pantalones.html">Pantalones</a></li>
+            <li><a href="calzado.html">Calzado</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Política y Preguntas Frecuentes</h3>
+          <ul>
+            <li><a href="preguntasfrecuentess.html">Preguntas Frecuentes</a></li>
+            <li><a href="politicayDevolucion.html">Política de Devolución</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Redes Sociales</h3>
+          <ul class="footer-social">
+            <li><img src="img/facebook.png" alt=""><a href="https://www.facebook.com">Facebook</a></li>
+            <li><img src="../img/gorjeo.png" alt=""><a href="https://www.twitter.com/">Twitter</a></li>
+            <li><img src="../img/instagram.png" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+   
 </body>
-
 </html>

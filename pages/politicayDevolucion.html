@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>TITULO</title>
+  <title>Tienda de Ropa</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <style>
@@ -32,10 +32,10 @@
             </button>
         </div>
         <div class="user-account">
-            <a href="#"><img src="../img/usuario.png" alt="Ícono de cuenta"></a>
+            <a href="registrarse.html"><img src="../img/usuario.png" alt="Ícono de cuenta"></a>
         </div>
         <div class="shopping-cart">
-            <a href="#"><img src="../img/anadir-a-la-cesta.png" alt="Ícono de carrito de compras"></a>
+            <a href="carrito.html"><img src="../img/carrito.png" alt="Ícono de carrito de compras"></a>
         </div>
     </div>
 </header>
@@ -45,16 +45,16 @@
       <li><div class="dropdown">
         <button class="dropbtn">Catalogo</button>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="remeras.html" >Remeras</a>
+          <a href="pantalones.html">Pantalones</a>
+          <a href="calzado.html">Calzado</a>
         </div>
       </div></li>
       <li><a href="pages/preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
     </ul>
   </nav>
   <main>
-    <section>
+    <section class="politicayDevolucion">
         <h2>Proceso de Devolución</h2>
         <p>Si deseas realizar una devolución de un producto adquirido en tiendaonline, sigue estos pasos:</p>
         <ol>
@@ -69,7 +69,7 @@
         <h2>Excepciones</h2>
         <p>Ten en cuenta que existen algunas excepciones en nuestra política de devolución:</p>
         <ul>
-            <li>Los productos adquiridos en promociones especiales, como HOT DOSCHIN o BLACK DOSCHIN, no son sujetos a devolución ni cambio.</li>
+            <li>Los productos adquiridos en promociones especiales, no son sujetos a devolución ni cambio.</li>
             <li>Las prendas deben estar en su estado original, con las etiquetas adheridas y sin signos de uso.</li>
             <li>No se aceptarán devoluciones de productos que hayan sido modificados o alterados de alguna manera.</li>
         </ul>
@@ -85,26 +85,36 @@
         </ul>
     </section>
 </main>
-  <footer>
-    <div class="footer-logo">
-        <img src="../img/logo.png" alt="Logo de la tienda de ropa">
-    </div>
-    <div class="footer-links">
-        <ul>
-          <a href="newIn.html">New in</a>
-            <a href="remeras.html">Remeras</a>
-            <a href="pantalones.html">Pantalones</a>
-            <a href="accesorios.html">Accesorios</a>
-            <a href="abrigos">Abrigos</a>
-        </ul>
-    </div>
-    <div class="footer-social">
-        <a href="#"><img src="../img/facebook.png" alt="Icono de Facebook"></a>
-        <a href="#"><img src="../img/instagram.png" alt="Icono de Instagram"></a>
-        <a href="#"><img src="../img/gorjeo.png" alt="Icono de Twitter"></a>
-    </div>
+<footer>
+  <div class="footer-logo">
+    <a href="../index.html">
+      <img src="../img/logo.png" width="100" height="500">
+  </a>
+</div>
+  <div class="footer-column">
+    <h3>Productos</h3>
+    <ul>
+      <li><a href="remeras.html">Remeras</a></li>
+      <li><a href="pantalones.html">Pantalones</a></li>
+      <li><a href="calzado.html">Calzado</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Política y Preguntas Frecuentes</h3>
+    <ul>
+      <li><a href="preguntasfrecuentess.html">Preguntas Frecuentes</a></li>
+      <li><a href="politicayDevolucion.html">Política de Devolución</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Redes Sociales</h3>
+    <ul class="footer-social">
+      <li><img src="../img/facebook.png" alt=""><a href="https://www.facebook.com">Facebook</a></li>
+      <li><img src="../img/gorjeo.png" alt=""><a href="https://www.twitter.com/">Twitter</a></li>
+      <li><img src="../img/instagram.png" alt=""><a href="https://www.instagram.com/">Instagram</a></li>
+    </ul>
+  </div>
 </footer>
-
 
 </body>
 
